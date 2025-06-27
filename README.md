@@ -1,5 +1,5 @@
 # employee-management-system
-This is a Python-based employee management system that allows users to manage employee data stored in a local text file (22100011016.txt). The application provides a command-line menu to perform various operations such as adding, deleting, updating, and searching for employees, as well as calculating salary raise percentages.
+This is a Python-based employee management system that allows users to manage employee data stored in a local text file (22100011016.txt). The application provides a menu-based interface to perform the following operations:
 
 Features
 Add a new employee
@@ -14,30 +14,33 @@ Calculate salary raise percentage
 
 Find the employee with the highest raise
 
-Data Storage (Text File Usage)
-All employee records are stored in a file named 22100011016.txt.
-Each line in the file represents one employee, and fields are separated by hyphens (-):
+Data Storage: 22100011016.txt
+All employee records are stored in a text file named 22100011016.txt.
 
+Each line in the file represents one employee.
+
+Fields are separated by hyphens (-).
+
+The format of each line is as follows:
 Name-Surname-ID-Age-NumberOfChildren-OldSalary-NewSalary
 Example:
 Ali-Kaya-101-35-2-10000-12000
 Ayse-Demir-102-29-0-9500-10500
-
-The file is appended when adding a new employee.
-
-It is rewritten when an employee is deleted or updated.
-
-All calculations and lookups are done using this file.
+The file is updated automatically whenever an employee is added, deleted, or modified.
 
 How to Run the Program
-Make sure Python is installed on your system (version 3.x).
+Make sure you have Python 3.x installed on your computer.
 
-Run the script in a terminal or command prompt:
+Save the project Python script in the same folder as 22100011016.txt (or let the program create the file).
+
+Open a terminal or command prompt and run the script using:
 python your_script_name.py
-Use the menu to perform actions. The file 22100011016.txt will be created automatically in the same directory.
+Follow the menu instructions displayed in the terminal.
 
-Note
-Input validation is included (for example, the program will re-ask for correct input type if a number is expected).
+Notes
+The program includes input validation. For example, if a number is expected, the program will prompt the user again if the input is incorrect.
 
-Employee ID must be unique and is used to identify and manage records.
+Each employee must have a unique ID, which is used to identify them in all operations.
+
+
 
