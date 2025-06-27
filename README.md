@@ -1,46 +1,47 @@
 # employee-management-system
-This is a Python-based employee management system that allows users to manage employee data stored in a local text file (22100011016.txt). The application provides a menu-based interface to perform the following operations:
+This is a Python-based employee management system that allows users to manage employee data stored in a local text file (`22100011016.txt`). The program provides a menu-based interface for the following operations:
 
-Features
-Add a new employee
+## Features
 
-Delete an employee by ID
+- Add a new employee  
+- Delete an employee by ID  
+- Search for an employee by ID  
+- Update employee information  
+- Calculate salary raise percentage  
+- Find the employee with the highest raise  
 
-Search for an employee by ID
+## Data Storage: `22100011016.txt`
 
-Update employee information
+All employee records are stored in a plain text file named `22100011016.txt`.
 
-Calculate salary raise percentage
+Each line in the file represents **one employee**, and fields are separated by hyphens (`-`):
 
-Find the employee with the highest raise
-
-Data Storage: 22100011016.txt
-All employee records are stored in a text file named 22100011016.txt.
-
-Each line in the file represents one employee.
-
-Fields are separated by hyphens (-).
-
-The format of each line is as follows:
 Name-Surname-ID-Age-NumberOfChildren-OldSalary-NewSalary
-Example:
+
+**Example:**
 Ali-Kaya-101-35-2-10000-12000
 Ayse-Demir-102-29-0-9500-10500
-The file is updated automatically whenever an employee is added, deleted, or modified.
 
-How to Run the Program
-Make sure you have Python 3.x installed on your computer.
 
-Save the project Python script in the same folder as 22100011016.txt (or let the program create the file).
+- When a new employee is added, a new line is appended.
+- When an employee is deleted or updated, the entire file is rewritten.
+- All calculations and searches use this file as the data source.
 
-Open a terminal or command prompt and run the script using:
-python your_script_name.py
-Follow the menu instructions displayed in the terminal.
+## How to Run
 
-Notes
-The program includes input validation. For example, if a number is expected, the program will prompt the user again if the input is incorrect.
+1. Make sure Python 3 is installed on your computer.
+2. Save the script and place it in a folder. You don’t need to manually create the `.txt` file — it will be created automatically.
+3. Open a terminal or command prompt in that folder.
+4. Run the program using the following command:
 
-Each employee must have a unique ID, which is used to identify them in all operations.
+python employeeManagement.py
+
+
+## Notes
+
+- Input validation is included. For example, if a number is expected but a string is entered, the program will ask again.
+- Each employee must have a **unique ID**.
+
 
 
 
